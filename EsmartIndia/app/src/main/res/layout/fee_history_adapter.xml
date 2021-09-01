@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:background="@drawable/shadow_tile" android:paddingTop="@dimen/_5sdp" android:paddingBottom="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/black" android:id="@+id/monthtv" android:padding="@dimen/_8sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Month" android:layout_weight="1" android:layout_marginStart="@dimen/_6sdp" android:layout_marginEnd="@dimen/_8sdp"/>
+        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/black" android:id="@+id/amounttv" android:padding="@dimen/_8sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Month" android:layout_weight="1" android:layout_marginStart="@dimen/_6sdp" android:layout_marginEnd="@dimen/_8sdp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:id="@+id/pay_btn" android:background="@color/lightorange" android:visibility="gone" android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_30sdp" android:text="Pay" android:layout_centerInParent="true" android:textAllCaps="false"/>
+            <ImageView android:id="@+id/result_img" android:visibility="gone" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_marginTop="@dimen/_8sdp" android:src="@drawable/download_icon" android:layout_centerHorizontal="true"/>
+            <ImageView android:id="@+id/payment_complete_img" android:visibility="gone" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_marginTop="@dimen/_8sdp" android:src="@drawable/payment_complete_icon" android:layout_marginStart="@dimen/_10sdp" android:layout_toEndOf="@+id/result_img"/>
+            <ImageView android:id="@+id/pending_img" android:visibility="gone" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_marginTop="@dimen/_8sdp" android:src="@drawable/payment_status_icon" android:layout_centerHorizontal="true" android:layout_toEndOf="@+id/result_img"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

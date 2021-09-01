@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_8sdp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/std_linear"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="@dimen/_10sdp"
+            android:layout_weight=".5"
+            android:textAlignment="viewStart"
+            android:text="--Select Standard--"
+            android:textColor="@color/black"
+            android:id="@+id/std_tv1"
+            android:textSize="@dimen/_14sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/_10sdp"
+            android:layout_weight="1.5"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/ic_keyboard_arrow_right_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/std_relative"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAlignment="viewStart"
+            android:text="Select Standard"
+            android:textColor="@color/white"
+            android:id="@+id/std_tv"
+            android:textSize="@dimen/_14sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/arrow"
+           android:layout_alignParentEnd="true"
+            android:background="@mipmap/downarrow"
+            android:backgroundTint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

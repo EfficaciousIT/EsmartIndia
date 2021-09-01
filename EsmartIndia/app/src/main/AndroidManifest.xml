@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.efficaciousIndia.EsmartDemo">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoesmarts"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logoesmarts"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon,android:label,android:theme">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="778c8e4ea7b696aa559ee17eba4355731cf6b463" />
+
+        <activity
+            android:name="com.efficaciousIndia.EsmartDemo.activity.Login_activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.efficaciousIndia.EsmartDemo.activity.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.efficaciousIndia.EsmartDemo.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.efficaciousIndia.EsmartDemo.dialogbox.Standard_division_dialog"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="com.efficaciousIndia.EsmartDemo.dialogbox.Book_Details_dialog"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="com.efficaciousIndia.EsmartDemo.dialogbox.Diary_image_dialogBox"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="com.efficaciousIndia.EsmartDemo.dialogbox.image_zoom_dialog"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="com.efficaciousIndia.EsmartDemo.dialogbox.Gallery_dialogBox"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="com.efficaciousIndia.EsmartDemo.Tab.Admin_LeaveList"
+            android:label="Leave List" />
+        <activity
+            android:name="com.efficaciousIndia.EsmartDemo.MultiImages.activities.AlbumSelectActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/MultipleImageSelectTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.efficaciousIndia.EsmartDemo.MultiImages.activities.ImageSelectActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/MultipleImageSelectTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.efficaciousIndia.EsmartDemo.activity.Gmail_login"
+            android:label="Gmail Verification" />
+        <activity android:name="com.efficaciousIndia.EsmartDemo.MultiImages.activities.MainImages" />
+        <activity android:name="com.efficaciousIndia.EsmartDemo.activity.Notifiacton" />
+        <activity android:name="com.efficaciousIndia.EsmartDemo.activity.MessageCenterActivity" />
+        <activity android:name="com.efficaciousIndia.EsmartDemo.activity.NoticeboardActivity" />
+        <activity android:name="com.efficaciousIndia.EsmartDemo.MultiImages.activities.Single_image" />
+        <activity android:name="com.efficaciousIndia.EsmartDemo.activity.IndividualChat" />
+        <activity android:name="com.efficaciousIndia.EsmartDemo.MultiImages.activities.Three_Images" />
+        <activity android:name="com.atom.mpsdklibrary.PayActivity"
+            android:label="@string/app_name"/>
+        <activity
+            android:name="com.efficaciousIndia.EsmartDemo.activity.Fee_Payment_History"
+            android:label="Payment History" />
+        <activity android:name="com.efficaciousIndia.EsmartDemo.activity.LibCategoryBooklist_fragment"
+            android:label="Book List"/>
+
+        <service android:name="com.efficaciousIndia.EsmartDemo.FCMServices.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

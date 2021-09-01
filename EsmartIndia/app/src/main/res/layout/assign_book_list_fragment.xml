@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/optionLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/layoutSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:background="@color/light_gray"
+                android:layout_marginStart="@dimen/_minus20sdp"
+                android:layout_toEndOf="@+id/student_card"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_35sdp">
+            </RelativeLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rect_gray_round"
+                android:id="@+id/student_card"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:drawableStart="@mipmap/user"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Student"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/student_card"
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rect_gray_round"
+                android:id="@+id/teacher_card"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:drawableStart="@mipmap/user"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Teacher"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+
+            <!--</androidx.cardview.widget.CardView>-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/date_linear"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/dark_gray"
+                    android:text="Start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:id="@+id/statrt_date_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_toLeftOf="@+id/cal_startdate"
+                        android:id="@+id/start_date_tv"
+                        android:textAlignment="viewStart"
+                        android:text=""
+                       
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/cal_startdate"
+                        android:layout_alignParentEnd="true"
+                        android:background="@mipmap/calender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:id="@+id/devider2"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@color/black"
+                />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_weight="1.1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/dark_gray"
+                    android:text="End"
+                   
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:id="@+id/end_date_relative"
+                    android:gravity="start"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_toLeftOf="@+id/cal_enddate"
+                        android:id="@+id/end_date_tv"
+                        android:textAlignment="viewStart"
+                        android:text=""
+                       
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/cal_enddate"
+                        android:layout_alignParentEnd="true"
+                        android:background="@mipmap/calender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/spinner_linaer"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview1"
+                android:clickable="false"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/black"
+                android:text="Standard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.efficaciousIndia.EsmartDemo.SearchableSpinner.SearchableSpinner
+                android:visibility="visible"
+                android:id="@+id/std_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/bg_spinner"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:padding="@dimen/_6sdp"
+                android:textSize="@dimen/_10sdp" />
+
+<!--            <Spinner-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:id="@+id/std_spinner"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/bg_spinner"-->
+<!--                android:elevation="4dp"-->
+<!--                android:padding="8dp"-->
+<!--                android:textAppearance="@style/TextAppearance.AppCompat.Small" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview2"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/black"
+                android:text="Subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.efficaciousIndia.EsmartDemo.SearchableSpinner.SearchableSpinner
+                android:visibility="visible"
+                android:id="@+id/subj_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/bg_spinner"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:padding="@dimen/_6sdp"
+                android:textSize="@dimen/_10sdp" />
+<!--            <Spinner-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:id="@+id/subj_spinner"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/bg_spinner"-->
+<!--                android:elevation="4dp"-->
+<!--                android:padding="8dp"-->
+<!--                android:textAppearance="@style/TextAppearance.AppCompat.Small" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnserach"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:text="Search"
+        android:textColor="@color/white"
+        android:background="@drawable/button_style"
+        android:textStyle="bold" />
+<LinearLayout
+    android:id="@+id/return_linear"
+    android:visibility="gone"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:padding="@dimen/_5sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:background="@drawable/upcoming"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"/>
+<TextView
+    android:layout_marginStart="@dimen/_4sdp"
+    android:layout_width="wrap_content"
+    android:text="Upcoming"
+    android:textSize="@dimen/_10sdp"
+    android:textColor="@color/black"
+    android:layout_height="wrap_content"
+    />
+    <ImageView
+        android:layout_marginStart="@dimen/_8sdp"
+        android:background="@drawable/currentduedate"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"/>
+    <TextView
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_width="wrap_content"
+        android:text="Due Date"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+    android:layout_marginStart="@dimen/_8sdp"
+    android:background="@drawable/overdue"
+    android:layout_width="@dimen/_15sdp"
+    android:layout_height="@dimen/_15sdp"/>
+    <TextView
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_width="wrap_content"
+        android:text="Overdue"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+        android:layout_marginStart="@dimen/_8sdp"
+        android:background="@drawable/alreadyreturn"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"/>
+    <TextView
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_width="wrap_content"
+        android:text="Already return"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:isScrollContainer="false"
+                    android:id="@+id/assign_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

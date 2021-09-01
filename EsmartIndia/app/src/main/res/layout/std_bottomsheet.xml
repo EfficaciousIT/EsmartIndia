@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/bottom_sheet_bg"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/minimize_relative"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@mipmap/downarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+<!--        <LinearLayout-->
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/searchBarlistLinear"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/_8sdp"-->
+<!--            android:layout_marginEnd="@dimen/_8sdp"-->
+<!--            android:layout_marginBottom="@dimen/_5sdp"-->
+<!--            android:background="@drawable/gray_border_rect"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <EditText-->
+<!--                android:textAlignment="viewStart"-->
+<!--                android:maxLength="100"-->
+<!--                android:id="@+id/edtSearch"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_8sdp"-->
+<!--                android:layout_weight="1.6"-->
+<!--                android:background="@color/transparent"-->
+<!--                android:fontFamily="@font/muli_regular"-->
+<!--                android:hint="@string/search_mother_tongue"-->
+<!--                android:inputType="text"-->
+<!--                android:padding="@dimen/_5sdp"-->
+<!--                android:textSize="@dimen/_14sdp" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/searchClose"-->
+<!--                android:layout_width="@dimen/_15sdp"-->
+<!--                android:layout_height="@dimen/_15sdp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginStart="@dimen/_2sdp"-->
+<!--                android:layout_marginEnd="@dimen/_12sdp"-->
+<!--                android:src="@drawable/close_cross" />-->
+<!--        </LinearLayout>-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:scrollbars="vertical"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:id="@+id/std_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

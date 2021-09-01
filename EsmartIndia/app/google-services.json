@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "694203763329",
+    "project_id": "esmartdemo-b52ca",
+    "storage_bucket": "esmartdemo-b52ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694203763329:android:967436ad86ec26215adb80",
+        "android_client_info": {
+          "package_name": "com.efficaciousIndia.EsmartDemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694203763329-ubtq5aa1nfbojl2rv9ce437g0doeii0t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.efficaciousIndia.EsmartDemo",
+            "certificate_hash": "9ba726a6b7808805763657f16d0fd9bae5d7eeac"
+          }
+        },
+        {
+          "client_id": "694203763329-ff2cm13df3tf7hm53to8mti0mdcgpga9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRFxxWckLmw9lpetRVzhL3z63QE6o3n6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694203763329-ff2cm13df3tf7hm53to8mti0mdcgpga9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

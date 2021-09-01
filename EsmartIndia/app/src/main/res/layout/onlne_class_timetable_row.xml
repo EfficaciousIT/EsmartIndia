@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:layout_marginBottom="2dp">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:background="@drawable/rounded_textview"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:id="@+id/pidtv"
+                android:layout_width="50dp"
+                android:layout_weight="0.5"
+                style="@android:style/TextAppearance.DeviceDefault.Small"
+                android:layout_height="50dp"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/linear"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/relative"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/PeriodTime"
+                android:layout_width="100dp"
+                style="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textColor="@color/black"
+                android:gravity="left|center_vertical"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="100dp"
+                style="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textColor="@color/red"
+                android:gravity="left|center_vertical"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/Teacher"
+            android:layout_width="100dp"
+            android:textColor="@color/black"
+            style="@android:style/TextAppearance.DeviceDefault.Small"
+            android:layout_toRightOf="@+id/linear"
+            android:gravity="left|center_vertical"
+            android:layout_toLeftOf="@+id/view_detail"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:layout_height="wrap_content"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/view_detail"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/green"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/edit" />
+    </RelativeLayout>
+</RelativeLayout>
